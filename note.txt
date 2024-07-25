@@ -1,0 +1,42 @@
+tbl_product{
+     id int(PK)
+     name vachar
+     description txt
+     color  vachar
+     size vachar
+     sale_price float
+     regular_price float
+     discount_price float
+     thumbnail vachar
+     category_id int(FK)
+     stock_qty int
+     user_id int(FK)
+}
+tbl_category{
+    id int(PK)
+    name varchar
+    user_id int(FK)
+}
+website_logo{
+    id  int(PK)
+    thumbnail varchar
+    user_id int(FK)
+}
+User{
+    id int(PK)
+    name varchar
+    email varchar
+    password varchar
+    thumbnail varchar
+
+}
+
+news{
+    id int(PK)
+    title varchar
+    thumbnail varchar
+    description Txt
+    user_id int(FK)
+
+}
+
